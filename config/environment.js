@@ -2,6 +2,9 @@
 
 module.exports = function(environment) {
   let ENV = {
+    'ember-websockets': {
+      socketIO: true
+    },
     modulePrefix: 'v-game',
     environment,
     rootURL: '/',

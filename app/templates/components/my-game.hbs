@@ -1,0 +1,14 @@
+<div class="players">
+  <h1>online now: {{socketService.online}}</h1>
+  <div>{{socketService.name1}}: {{socketService.point1}}</div>
+  <div>{{socketService.name2}}: {{socketService.point2}}</div>
+</div>
+<div class="board">
+
+  {{#if start}}
+    {{my-game/ball}}
+  {{else}}
+    {{input enter=(action "playerName") value=socketService.name class="playerName" placeholder="player name"}}
+  {{/if}}
+
+</div>
